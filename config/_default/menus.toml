@@ -47,3 +47,70 @@
   weight = 3
   [main.params]
     icon = "fa-solid fa-tags"
+#-----------------------------------------
+
+# [languages]
+#   [languages.en]
+#     languageName = "English"
+#     weight = 1
+#     disabled = false
+#     languageCode = "en"
+#     contentDir = "content/en"  # Conteúdo em inglês
+#     [languages.en.params]
+#       logo = "/logo.svg"
+#       disableTextInHeader = true
+#       description = "Tabletop and card games producer and publisher."
+#       keywords = ["tabletop games", "board games", "card games", "impossibilis"]
+#       displayName = "EN"
+#       isoCode = "en"
+#       rtl = false
+#     [languages.en.menu]
+#       [[languages.en.menu.main]]
+#         name = "About"
+#         url = "/en/about/"
+#         weight = 10
+#       [[languages.en.menu.main]]
+#         name = "Games"
+#         url = "/en/games/"
+#         weight = 20
+#       [[languages.en.menu.main]]
+#         name = "News"
+#         url = "/en/news/"
+#         weight = 30
+#       [[languages.en.menu.main]]
+#         name = "Contact"
+#         url = "/en/contact/"
+#         weight = 40
+
+#   [languages.pt]
+#     disabled = false
+#     languageCode = "pt"
+#     languageName = "Português"
+#     weight = 2
+#     contentDir = "content/pt"  # Conteúdo em português
+#     [languages.pt.params]
+#       logo = "/logo.svg"
+#       disableTextInHeader = true
+#       description = "Produtora e editora de jogos de tabuleiro e cartas."
+#       keywords = ["jogos de tabuleiro", "jogos de cartas", "impossibilis"]
+#       displayName = "PT"
+#       isoCode = "pt"
+#       rtl = false
+#       dateFormat = "2 January 2006"
+#     [languages.pt.menu]
+#       [[languages.pt.menu.main]]
+#         name = "Acerca"
+#         url = "/pt/about/"
+#         weight = 10
+#       [[languages.pt.menu.main]]
+#         name = "Jogos"
+#         url = "/pt/games/"
+#         weight = 20
+#       [[languages.pt.menu.main]]
+#         name = "Novidades"
+#         url = "/pt/news/"
+#         weight = 30
+#       [[languages.pt.menu.main]]
+#         name = "Contacto"
+#         url = "/pt/contact/"
+#         weight = 40

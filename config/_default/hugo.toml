@@ -3,18 +3,57 @@
 # See: https://gohugo.io/getting-started/configuration/
 # -------------------------------------------------------------------------------------
 
-title = "Hugo FixIt Blog"
-baseURL = "https://hugo-fixit.github.io/hugo-fixit-starter/"
+title = "impossibilis"
+baseURL = "https://phrazao.github.io/ifx/"
 # theme = "FixIt"
 defaultContentLanguage = "en"
 languageCode = "en"
-hasCJKLanguage = true
+hasCJKLanguage = false
 enableRobotsTXT = true
 enableEmoji = true
 enableGitInfo = true
 relativeURLs = false
 buildDrafts = false
 summaryLength = 150
+
+[languages]
+  [languages.en]
+    contentDir = 'content/en'
+    languageName = 'English'
+    weight = 10
+  [languages.pt]
+    contentDir = 'content/pt'
+    languageName = 'Português'
+    weight = 20
+    disabled = false
+    languageCode = "pt"
+    [languages.pt.params]
+      logo = "../logo.svg"
+      disableTextInHeader = true
+      description = "Produtora e editora de jogos de tabuleiro e cartas."
+      keywords = ["jogos de tabuleiro", "jogos de cartas", "impossibilis"]
+      displayName = "PT"
+      isoCode = "pt"
+      rtl = false
+      dateFormat = "2 January 2006"
+    [languages.pt.menu]
+      [[languages.pt.menu.main]]
+        name = "Acerca"
+        url = "/pt/about/"
+        weight = 10
+      [[languages.pt.menu.main]]
+        name = "Jogos"
+        url = "/pt/games/"
+        weight = 20
+      [[languages.pt.menu.main]]
+        name = "Novidades"
+        url = "/pt/news/"
+        weight = 30
+      [[languages.pt.menu.main]]
+        name = "Contacto"
+        url = "/pt/contact/"
+        weight = 40
+
 # ignore some build errors
 ignoreLogs = [
   "error-get-remote-image",
