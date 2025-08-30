@@ -5,9 +5,11 @@
 
 title = "impossibilis"
 baseURL = "https://phrazao.github.io/ifx/"
-# theme = "FixIt"
+# theme = "FixIt" # Descomenta quando instalares o tema como módulo
 defaultContentLanguage = "en"
 languageCode = "en"
+defaultContentLanguageInSubdir = true
+timezone = "Europe/Lisbon" # Define o fuso horário para Portugal
 hasCJKLanguage = false
 enableRobotsTXT = true
 enableEmoji = true
@@ -21,6 +23,44 @@ summaryLength = 150
     contentDir = 'content/en'
     languageName = 'English'
     weight = 10
+    disabled = false
+    languageCode = "en"
+    [languages.en.params]
+      description = "Tabletop and card games producer and publisher."
+      keywords = ["tabletop games", "board games", "card games", "impossibilis"]
+      displayName = "EN"
+      rtl = false
+      dateFormat = "02-01-2006" # dd-mm-yyyy
+    [[languages.en.menu.main]]
+      name = "About"
+      url = "about/"
+      weight = 10
+    [[languages.en.menu.main]]
+      identifier = "games"
+      name = "Games"
+      url = "games/"
+      weight = 20
+    [[languages.en.menu.main]]
+      parent = "games"
+      identifier = "quadra"
+      name = "Quadra"
+      url = "games/quadra/"
+      weight = 10
+    [[languages.en.menu.main]]
+      parent = "games"
+      identifier = "pulsar"
+      name = "P-U-L-S-A-R"
+      url = "games/pulsar/"
+      weight = 20
+    [[languages.en.menu.main]]
+      name = "News"
+      url = "posts/"
+      weight = 30
+    [[languages.en.menu.main]]
+      name = "Contact"
+      url = "contact/"
+      weight = 40
+
   [languages.pt]
     contentDir = 'content/pt'
     languageName = 'Português'
@@ -28,31 +68,40 @@ summaryLength = 150
     disabled = false
     languageCode = "pt"
     [languages.pt.params]
-      logo = "../logo.svg"
-      disableTextInHeader = true
       description = "Produtora e editora de jogos de tabuleiro e cartas."
       keywords = ["jogos de tabuleiro", "jogos de cartas", "impossibilis"]
       displayName = "PT"
-      isoCode = "pt"
       rtl = false
-      dateFormat = "2 January 2006"
-    [languages.pt.menu]
-      [[languages.pt.menu.main]]
-        name = "Acerca"
-        url = "/pt/about/"
-        weight = 10
-      [[languages.pt.menu.main]]
-        name = "Jogos"
-        url = "/pt/games/"
-        weight = 20
-      [[languages.pt.menu.main]]
-        name = "Novidades"
-        url = "/pt/news/"
-        weight = 30
-      [[languages.pt.menu.main]]
-        name = "Contacto"
-        url = "/pt/contact/"
-        weight = 40
+      dateFormat = "02-01-2006" # dd-mm-yyyy
+    [[languages.pt.menu.main]]
+      name = "Acerca"
+      url = "about/"
+      weight = 10
+    [[languages.pt.menu.main]]
+      identifier = "games"
+      name = "Jogos"
+      url = "games/"
+      weight = 20
+    [[languages.pt.menu.main]]
+      parent = "games"
+      identifier = "quadra"
+      name = "Quadra"
+      url = "games/quadra/"
+      weight = 10
+    [[languages.pt.menu.main]]
+      parent = "games"
+      identifier = "pulsar"
+      name = "P-U-L-S-A-R"
+      url = "games/pulsar/"
+      weight = 20
+    [[languages.pt.menu.main]]
+      name = "Novidades"
+      url = "posts/"
+      weight = 30
+    [[languages.pt.menu.main]]
+      name = "Contacto"
+      url = "contact/"
+      weight = 40
 
 # ignore some build errors
 ignoreLogs = [

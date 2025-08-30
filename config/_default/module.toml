@@ -5,6 +5,7 @@
 
 [[imports]]
   path = "github.com/hugo-fixit/FixIt"
+  ignoreConfig = true  # Desativa toda a config do módulo, incluindo i18n
 
 [[imports]]
   path = "github.com/hugo-fixit/shortcode-docs-bookmark"
@@ -12,3 +13,5 @@
 [hugoVersion]
   extended = true
   min = "0.132.0"
+
+#ignoreConfig = ["i18n"]

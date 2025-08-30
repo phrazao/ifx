@@ -38,6 +38,26 @@ summaryPlainify = false
 # You can turn it off, but we would really appreciate if you don’t, as this is a good way to watch FixIt's popularity on the rise.
 disableThemeInject = false
 
+#favicon = "/favicon.ico"
+
+ # [params.favicon]
+    # [[params.favicon]] # Primeiro favicon
+    #   rel = "icon"
+    #   type = "image/x-icon"
+    #   file = "/favicon.ico"
+    # [[params.favicon]] # Segundo favicon
+    #   rel = "apple-touch-icon"
+    #   type = "image/png"
+    #   file = "/apple-touch-icon.png"
+    # [[params.favicon]] # Terceiro favicon (exemplo)
+    #   rel = "icon"
+    #   type = "image/png"
+    #   file = "/favicon-96x96.png"
+    # [[params.favicon]] # Quarto favicon (exemplo)
+    #   rel = "manifest"
+    #   type = "image/png"
+    #   file = "/web-app-manifest-192x192.png"
+
 # Author Configuration
 [author]
   name = "Lruihao"
@@ -110,6 +130,7 @@ disableThemeInject = false
 [header]
   # FixIt 0.2.13 | CHANGED desktop header mode ["sticky", "normal", "auto"]
   desktopMode = "sticky"
+  header.layout = "fixed-fill-blur" #ph cp do blowfish
   # FixIt 0.2.13 | CHANGED mobile header mode ["sticky", "normal", "auto"]
   mobileMode = "auto"
   # Header title config
