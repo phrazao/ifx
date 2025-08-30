@@ -3,7 +3,7 @@
   "baseUrl": ".",
   "paths": {
    "*": [
-    "../_vendor/github.com/hugo-fixit/FixIt/assets/*"
+    "../themes/FixIt/assets/*"
    ]
   }
  }

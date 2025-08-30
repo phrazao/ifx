@@ -6,6 +6,7 @@
 title = "impossibilis"
 baseURL = "https://phrazao.github.io/ifx/"
 # theme = "FixIt" # Descomenta quando instalares o tema como módulo
+theme = ["FixIt", "shortcode-docs-bookmark"]
 defaultContentLanguage = "en"
 languageCode = "en"
 defaultContentLanguageInSubdir = true
